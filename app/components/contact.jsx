@@ -1,32 +1,39 @@
-"use client"
-import emailjs from 'emailjs-com';
+"use client";
+import emailjs from "emailjs-com";
 import React, { useState } from "react";
 
 const Contact = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [sujet, setSujet] = useState('');
-  const [statusMessage, setStatusMessage] = useState('');
-const handleSubmit = async (e) => {
-  e.preventDefault();
-  const serviceId = 'service_wnema2c';
-  const templateId = 'template_6mx7och';
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [sujet, setSujet] = useState("");
+  const [statusMessage, setStatusMessage] = useState("");
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const serviceId = "service_wnema2c";
+    const templateId = "template_6mx7och";
 
-  try {
-    const response = await emailjs.sendForm(serviceId, templateId, e.target, 'JPVC2pgKwHmxjZV6K', { sujet });
-    console.log('Email sent successfully!', response);
-    setStatusMessage('Votre message a été envoyé avec succès!');
-    setName('');
-    setEmail('');
-    setMessage('');
-    setSujet('');
-  } catch (error) {
-    console.error('Error sending email:', error);
-    setStatusMessage('Une erreur s\'est produite lors de l\'envoi du message. Veuillez réessayer.');
-  }
-};
-
+    try {
+      const response = await emailjs.sendForm(
+        serviceId,
+        templateId,
+        e.target,
+        "JPVC2pgKwHmxjZV6K",
+        { sujet }
+      );
+      console.log("Email sent successfully!", response);
+      setStatusMessage("Votre message a été envoyé avec succès!");
+      setName("");
+      setEmail("");
+      setMessage("");
+      setSujet("");
+    } catch (error) {
+      console.error("Error sending email:", error);
+      setStatusMessage(
+        "Une erreur s'est produite lors de l'envoi du message. Veuillez réessayer."
+      );
+    }
+  };
 
   return (
     <div>
@@ -37,10 +44,10 @@ const handleSubmit = async (e) => {
               <h4>
                 <span></span> Contact
               </h4>
-              <p>
+              <p className="text-[18px]">
                 Nos équipes sont à votre disposition pour vous venir en aide.
               </p>
-              <p>
+              <p className="text-[18px]">
                 Remplissez le formulaire et nous reprendrons contact avec vous
                 très rapidement afin de répondre à votre requête
               </p>
@@ -144,7 +151,13 @@ const handleSubmit = async (e) => {
             </div>
 
             <div className="lg:col-span-7">
-              <form className="form" onSubmit={handleSubmit} id="my-form" action="" method="">
+              <form
+                className="form"
+                onSubmit={handleSubmit}
+                id="my-form"
+                action=""
+                method=""
+              >
                 <div className="messages"></div>
 
                 <div className="controls">
@@ -176,14 +189,14 @@ const handleSubmit = async (e) => {
 
                     <div className="md:w-full">
                       <div className="mb-8">
-                      <input
-                        type="text"
-                        name="subject"
-                        value={sujet}
-                        onChange={(e) => setSujet(e.target.value)}
-                        placeholder="Subject"
-                        required="required"
-                      />
+                        <input
+                          type="text"
+                          name="subject"
+                          value={sujet}
+                          onChange={(e) => setSujet(e.target.value)}
+                          placeholder="Subject"
+                          required="required"
+                        />
                       </div>
                     </div>
                     <div className="md:w-full">
@@ -205,7 +218,7 @@ const handleSubmit = async (e) => {
                       </button>
                     </div>
                     <div className="form-status" id="contactFormStatus">
-                        {statusMessage && <p>{statusMessage}</p>}
+                      {statusMessage && <p>{statusMessage}</p>}
                     </div>
                   </div>
                 </div>

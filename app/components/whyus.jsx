@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const whyus = () => {
   return (
@@ -21,12 +22,9 @@ const whyus = () => {
                   d'occasions, contacter nous simplement avec le formulaire
                   ci-dessous.
                 </p>
-                <a
-                  href="http://saidtex.ma/buy-and-sell/"
-                  className="butn butn-bg"
-                >
+                <Link href="/buyandsell" className="butn butn-bg">
                   <span>CLICK HERE</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

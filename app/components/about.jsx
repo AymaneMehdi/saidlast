@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { Component } from "react";
 
 class Example extends Component {
@@ -22,11 +22,11 @@ class Example extends Component {
 
   render() {
     return (
-      <section id="services" className="bg-gray-100">
+      <section id="services" className="bg-white">
         <div className="container mx-auto px-4 py-12">
           <h2 className="text-3xl font-bold text-center text-blue-900 mt-20 mb-12">
-            Nous représentons les marques internationales les plus performantes du
-            secteur
+            Nous représentons les marques internationales les plus performantes
+            du secteur
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Column 1 */}
@@ -50,9 +50,9 @@ class Example extends Component {
             {/* Column 2 */}
             <div className="bg-white rounded-lg shadow-xl p-8 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl">
               <img
-                src="/images/textile-technique.png"
+                src="/images/15.png"
                 alt="Textile Technique"
-                className="mx-auto h-24 w-24 mb-6"
+                className="mx-auto h-24 w-[140px] mb-6"
               />
               <h3 className="text-xl text-blue-900 font-semibold mb-4 text-center">
                 TEXTILE TECHNIQUE

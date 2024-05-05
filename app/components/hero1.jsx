@@ -30,10 +30,13 @@ const Hero1 = () => {
                 SAIDTEX
               </h1>
 
-              <h3 className="text-white font-bold text-xl mb-5">
-                VOTRE PARTENAIRE POUR LES MACHINES TEXTILES AVEC UN ACCENT FORT
-                SUR LE SERVICE ET LA QUALITÉ
+              <h3 className="text-white font-bold text-[30px] mb-5">
+                VOTRE PARTENAIRE POUR LES MACHINES TEXTILES AVEC UN
               </h3>
+              <h3 className="text-white font-bold text-[30px] mb-5">
+                ACCENT FORT SUR LE SERVICE ET LA QUALITÉ
+              </h3>
+
               <div className="grid grid-cols-12 gap-4">
                 <div className="col-span-10 col-start-2 lg:col-span-8 lg:col-start-3">
                   <p className="text-white">

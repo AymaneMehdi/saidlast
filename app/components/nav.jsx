@@ -125,7 +125,7 @@ export default function Example() {
                             smooth={true}
                             offset={50}
                             duration={500}
-                            className="cursor-pointer flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
+                            className="cursor-pointer flex items-center text-sm font-bold text-gray-700 hover:text-gray-800"
                           >
                             {page.name}
                           </ScrollLink>

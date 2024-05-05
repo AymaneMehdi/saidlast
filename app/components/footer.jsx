@@ -3,9 +3,13 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="text-center pos-re">
-      <div className="container mx-auto">
-        <a className="logo" href="#">
-          <img src="/images/saidtexlogo.png" alt="logo" />
+      <div className=" mx-auto">
+        <a className="logo w-[180px]" href="#">
+          <img
+            src="/images/saidtexlogo.png"
+            alt="logo"
+            className="w-[180px] h-[50px]"
+          />
         </a>
 
         <p>
