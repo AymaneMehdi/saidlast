@@ -7,14 +7,7 @@ import React, { useState } from "react";
 import SellNav from "../components/sellNav";
 import { PhotoIcon, UserCircleIcon } from "@heroicons/react/24/solid";
 const ContactPage = () => {
-  const [companyName, setCompanyName] = useState('');
-  const [phoneNumber, setPhoneNumber] = useState('');
-  const [firstName, setFirstName] = useState('');
-  const [machineType, setMachineType] = useState('');
-  const [machineStatus, setMachineStatus] = useState('');
-  const [machineYear, setMachineYear] = useState('');
-  const [price, setPrice] = useState('');
-  const [comment, setComment] = useState('');
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     const serviceId = 'service_wnema2c';
