@@ -8,28 +8,7 @@ import SellNav from "../components/sellNav";
 import { PhotoIcon, UserCircleIcon } from "@heroicons/react/24/solid";
 const ContactPage = () => {
   
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const serviceId = 'service_wnema2c';
-    const templateId = 'template_6mx7och';
   
-    try {
-      const response = await emailjs.sendForm(serviceId, templateId, e.target, 'JPVC2pgKwHmxjZV6K', { sujet });
-      console.log('Email sent successfully!', response);
-      setStatusMessage('Votre message a été envoyé avec succès!');
-      setCompanyName('');
-      setPhoneNumber('');
-      setFirstName('');
-      setMachineType('');
-      setMachineStatus('');
-      setMachineYear('');
-      setPrice('');
-      setComment('');
-    } catch (error) {
-      console.error('Error sending email:', error);
-      setStatusMessage('Une erreur s\'est produite lors de l\'envoi du message. Veuillez réessayer.');
-    }
-  };
 
 
 
@@ -54,8 +33,7 @@ const ContactPage = () => {
                 type="text"
                 name="first-name"
                 id="first-name"
-                value={firstName}
-                onChange={(e) => setFirstName(e.target.value)}
+              
                 autoComplete="given-name"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
@@ -73,8 +51,7 @@ const ContactPage = () => {
                 type="tel"
                 name="last-name"
                 id="last-name"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                
                 autoComplete="family-name"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
@@ -92,8 +69,7 @@ const ContactPage = () => {
                 type="text"
                 name="last-name"
                 id="last-name"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+              
                 autoComplete="family-name"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
@@ -111,8 +87,7 @@ const ContactPage = () => {
                 type="email"
                 name="email"
                 id="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                
                 autoComplete="email"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
@@ -130,8 +105,7 @@ const ContactPage = () => {
                 type="text"
                 name="Type"
                 id="Type"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+              
                 autoComplete="family-name"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
@@ -149,8 +123,7 @@ const ContactPage = () => {
                 type="text"
                 name="last-name"
                 id="last-name"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                
                 autoComplete="family-name"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
@@ -168,8 +141,7 @@ const ContactPage = () => {
                 type="text"
                 name="last-name"
                 id="last-name"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+              
                 autoComplete="family-name"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
